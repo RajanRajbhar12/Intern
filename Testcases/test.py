@@ -22,7 +22,7 @@ class TestMainAPI(unittest.TestCase):
     def test_signup(self):
         response = self.client.post(
             "/signup",
-            json={"email":"rajannrajb502@gmail.com", "password":"12568"}
+            json={"email":"raj@gmailcom", "password":"12345678"}
         )
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json(), {"message": "User saved!"})
@@ -61,9 +61,17 @@ class TestMainAPI(unittest.TestCase):
        
         response = self.client.post(
             "/login",
-            json={"email":"rajannrajb502@gmail.com", "password":"12568"}
+            json={"email":"raj@", "password":"632145"}
         ) 
         self.assertEqual(response.json(),{"success":True})
+    
+    def test_div_zero(self):
+        response = self.client.post(
+            "/calc/div",
+            json={"num1": 6, "num2":0}
+        ) 
+        self.assertEqual(response.json(),{"result": " divided by 0 is not allowed"})
+    
 
 if __name__ == "__main__":
     unittest.main()
