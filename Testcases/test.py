@@ -71,6 +71,7 @@ class TestMainAPI(unittest.TestCase):
             json={"num1": 6, "num2":0}
         ) 
         self.assertEqual(response.json(),{"result": " divided by 0 is not allowed"})
+        #this is the change i did
     
 
 if __name__ == "__main__":
