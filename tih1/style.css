@@ -1,0 +1,89 @@
+
+.main{
+    margin-top: 10px;
+    font-size: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.container{
+    padding-right: 10px;
+    width: 50%;
+    height: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2d362;
+    align-content: center;
+}
+
+.signup{
+    
+    text-align: center;
+    padding: 20px;
+}
+
+.email{
+    
+    width: 100%;
+    padding: 10px;
+    margin: 10px -10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.password{
+    width: 100%;
+    padding: 10px;
+    margin: 10px -10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.btn{
+    background-color: aquamarine;
+   font-size: 25px;
+}
+
+.calbutton{
+    background-color: black;
+    width: 50%;
+    height: 400px;
+    margin: 0 auto;
+    padding: 20px;
+   
+    align-content: center;
+    
+}
+.calbutton .btn{
+    background-color: yellow;
+    align-content: center;
+  
+}
+
+.button{
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+   text-align: center;
+}
+
+#btn{
+    background-color: rgb(233, 190, 157);
+    align-items: center;
+}
+.box{
+    text-align: center;
+ 
+
+}
+#result{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.calbox{
+   display: grid;
+    grid-template-columns: repeat(3,100px);
+    justify-content: center;
+   gap: 10px;
+    height: auto;
+}
