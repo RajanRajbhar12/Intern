@@ -1,10 +1,8 @@
-import random
 
-while True:
-    num=int(input("enter a number"))
 
-    if num%2==0:
-        print("even")
+def multilist():
+    i=[1,2,3,4]
+    for i in range:
+        
 
-    else:
-        print("odd")
+multilist()
