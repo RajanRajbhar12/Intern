@@ -1,17 +1,13 @@
-expense=[]
+Amount=[]
 
 
 while True:
-    description=input("enter the details:")
-    amount=float(input("enter the amount:"))
-    expense.append((description,amount))
-    print(f"{expense}")
-    print(f" Expense: {description}:{amount}")
-
-
-    a=input("u want to continue press 1 or 2 to exit:")
-    if a=="1":
-        print("continue")
-    elif a=="2":
-        break
-    
+    expense1=float(input("enter the expense1:"))
+    expense2=float(input("enter the expense1:"))
+    expense3=float(input("enter the expense1:"))
+    Amount.append((expense1,expense2,expense3))
+    add=expense1+expense2+expense3
+    avg=add/len{Amount}
+    print(f"{Amount}")
+    print(f"{add}")
+    print(f"{avg}")

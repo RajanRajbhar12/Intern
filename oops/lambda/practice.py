@@ -1,8 +1,14 @@
+expenses= []
 
+def add(description,amount):
+    expenses.append({"description":description,"amount":amount})
+    print(f"added:{description} -{amount}")
+    print(f"All expenses :{expenses}")
 
-def multilist():
-    i=[1,2,3,4]
-    for i in range:
-        
+def total():
+    total = sum(item["amount"] for item in expenses)
+    return total
 
-multilist()
+add("Lunch",50)
+add("snacks",30)
+print("Total",total())
